@@ -1,5 +1,6 @@
 package ohorobets.tests.unit.calculator;
 
+import io.qameta.allure.Issue;
 import ohorobets.calculator.Calculator;
 import ohorobets.tests.unit.BaseTest;
 import org.testng.Assert;
@@ -27,6 +28,7 @@ public class CalculatorUnitTests extends BaseTest {
         calculator = new Calculator();
     }
 
+    @Issue("BUG-001")
     @Test(groups = {ALL, UNIT, POSITIVE, CALCULATOR, ADD},
             dataProviderClass = CalculatorUnitDataProviders.class, dataProvider = "addPositiveProvider")
     public void addPositiveUnitTest(Double[] input, Double expected) {
