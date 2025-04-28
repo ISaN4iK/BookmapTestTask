@@ -36,6 +36,7 @@ public class CalculatorUnitTests extends BaseTest {
         Assert.assertEquals(actual, expected, "Addition result is incorrect");
     }
 
+    @Issue("BUG-002")
     @Test(groups = {ALL, UNIT, POSITIVE, CALCULATOR, SUBTRACT},
             dataProviderClass = CalculatorUnitDataProviders.class, dataProvider = "subtractPositiveProvider")
     public void subtractPositiveUnitTest(Double minuend, Double subtrahend, Double expected) {
@@ -43,6 +44,7 @@ public class CalculatorUnitTests extends BaseTest {
         Assert.assertEquals(actual, expected, "Subtraction result is incorrect");
     }
 
+    @Issue("BUG-003")
     @Test(groups = {ALL, UNIT, POSITIVE, CALCULATOR, MULTIPLY},
             dataProviderClass = CalculatorUnitDataProviders.class, dataProvider = "multiplyPositiveProvider")
     public void multiplyPositiveUnitTest(Double[] input, Double expected) {
@@ -50,6 +52,7 @@ public class CalculatorUnitTests extends BaseTest {
         Assert.assertEquals(actual, expected, "Multiplication result is incorrect");
     }
 
+    @Issue("BUG-004")
     @Test(groups = {ALL, UNIT, POSITIVE, CALCULATOR, DIVIDE},
             dataProviderClass = CalculatorUnitDataProviders.class, dataProvider = "dividePositiveProvider")
     public void dividePositiveUnitTest(Double dividend, Double divisor, Double expected) {
