@@ -1,8 +1,7 @@
 ## Description
 
 This project contains automated tests developed as part of the test assignment for **Bookmap**.  
-The tests are written in **Java**, use **Gradle** for build management, **TestNG** as the testing framework, and *
-*Allure** for generating reports.
+The tests are written in **Java**, use **Gradle** for build management, **TestNG** as the testing framework, and **Allure** for generating reports.
 
 ## Requirements
 
